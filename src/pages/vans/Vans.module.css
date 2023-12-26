@@ -1,0 +1,43 @@
+.vans 
+{
+    composes: container from '../../App.css';
+}
+
+.title {
+    composes: heading-2 from '../../App.css';
+}
+
+
+.options 
+{
+    display: flex;
+}
+
+.optionBtn 
+{
+    composes: btn from '../../App.css';
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+}
+
+.clearBtn {
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.vansList 
+{
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+.error {
+    composes: error from '../../App.css';
+}

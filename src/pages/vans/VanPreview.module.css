@@ -1,0 +1,56 @@
+.preview 
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto;
+    flex: 1 1 230px;
+    text-decoration:none;
+    color: inherit;
+}
+
+.img 
+{
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.name 
+{
+    grid-column: 1 / 2;
+    grid-row:  2 / 3;
+    margin-bottom: .5em;
+}
+
+.type
+{
+    margin-top: 0;
+    composes: type from '../../App.css';
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.price 
+{
+    text-align: right;
+    grid-columns: 2 / 3;
+    grid-row:  2 / 4;
+}
+
+.price span 
+{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.simple {
+    composes: simple from '../../App.css';
+}
+
+.luxury {
+    composes: luxury from '../../App.css';
+}
+
+.rugged {
+    composes: rugged from '../../App.css';
+}

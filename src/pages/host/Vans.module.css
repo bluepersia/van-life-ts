@@ -1,0 +1,32 @@
+.title {
+    composes: heading-2 from '../../App.css';
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.vanPreview
+{
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+    background-color: white;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.vanImg
+{
+    width: 13%;
+}
+
+
+
+.vanPrice {
+    margin-top: 0;
+}
+

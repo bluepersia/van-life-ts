@@ -1,0 +1,11 @@
+.host 
+{
+    composes: container from '../../App.css';
+}
+.nav_list {
+    composes: nav_list from '../../App.css';
+}
+
+.nav_link {
+    composes: nav_link from '../../App.css';
+}

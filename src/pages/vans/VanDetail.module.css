@@ -1,0 +1,64 @@
+.main {
+    composes: container from '../../App.css';
+
+}
+
+
+.van 
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.img {
+    width: 100%;
+}
+
+.title {
+    composes: heading-2 from '../../App.css';
+}
+
+.type
+{
+    composes: type from '../../App.css';
+}
+
+.simple 
+{
+    composes: simple from '../../App.css';
+}
+.luxury 
+{
+    composes: luxury from '../../App.css';
+}
+
+.rugged 
+{
+    composes: rugged from '../../App.css';
+}
+
+.description {
+    composes: body from '../../App.css';
+}
+
+.price 
+{
+    font-size: 1.25rem;
+}
+.price span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    composes: btn from '../../App.css';
+    color: white;
+    background-color: #FF8C38;
+    font-size: 1.125rem;
+    display: block;
+    width: 100%;
+}
+
+.error {
+    composes: error from '../../App.css';
+}

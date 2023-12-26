@@ -1,0 +1,25 @@
+.header 
+{
+    composes: container from '../App.css';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo 
+{
+    font-size: 1.56rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_list 
+{
+    composes: nav_list from '../App.css';
+}
+
+.nav_link 
+{
+    composes: nav_link from '../App.css';
+}

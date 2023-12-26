@@ -1,0 +1,9 @@
+
+
+.body {
+    composes: body from '../../App.css';
+}
+
+.body span {
+    font-weight: bold;
+}

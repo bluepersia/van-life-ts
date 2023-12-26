@@ -1,0 +1,17 @@
+.main {
+    composes: container from '../App.css';
+}
+
+.title 
+{
+    composes: heading-2 from '../App.css';
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;;
+    composes: btn from '../App.css';
+    background-color: #161616;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+}

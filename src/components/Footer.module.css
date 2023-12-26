@@ -1,0 +1,14 @@
+.footer
+{
+    composes: container from '../App.css';
+    background-color: #252525;
+
+    margin-top: auto;
+}
+
+.text 
+{
+    text-align: center;
+    color: #AAAAAA;
+    font-size: 0.875rem;
+}

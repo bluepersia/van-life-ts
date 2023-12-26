@@ -1,0 +1,77 @@
+
+.inner {
+    background-color: white;
+    padding: 2em;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 32% auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.img {
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+
+.type 
+{
+    composes: type from '../../App.css';
+    margin-bottom: 0;
+    
+}
+
+.name{
+    margin: 0;
+}
+
+.price {
+    margin-top: 0;
+}
+.price span {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+
+
+
+.nav_list {
+    composes: nav_list from '../../App.css';
+}
+
+.nav_link {
+    composes: nav_link from '../../App.css';
+}
+
+
+
+
+.simple 
+{
+    composes: simple from '../../App.css';
+}
+.rugged 
+{
+    composes: rugged from '../../App.css';
+}
+
+.luxury 
+{
+    composes: luxury from '../../App.css';
+}
+
+.error 
+{
+    composes: error from '../../App.css';
+}
+
+
+.outletContainer {
+    padding: 1em 0;
+}

@@ -1,0 +1,38 @@
+.about {
+    composes: container from '../App.css';
+}
+
+.about * {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.img {
+    width: 100%;
+    max-width: 550px;
+    display: block;
+}
+
+
+.title {
+    composes: heading-2 from '../App.css';
+}
+
+.cta 
+{
+    composes: container from '../App.css';
+    background-color: #FFCC8D;
+}
+
+.cta_title {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.cta_btn {
+    composes: btn from '../App.css';
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+}

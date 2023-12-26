@@ -1,0 +1,14 @@
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+body 
+{
+  margin: 0;
+  color: #161616;
+  background-color: #FFF7ED;
+}
+
+* {
+  box-sizing: border-box;
+}

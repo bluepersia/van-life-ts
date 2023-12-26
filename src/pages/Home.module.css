@@ -1,0 +1,40 @@
+.home
+{
+    composes: container from '../App.css';
+    color: white;
+
+    background-image: url(../img/home.png);
+    background-size: cover;
+}
+
+.home * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title 
+{
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+
+.body 
+{
+    composes: body from '../App.css';
+}
+
+
+.btn {
+    composes: btn from '../App.css';
+
+    background-color: #FF8C38;
+    border: 0;
+    color: inherit;
+    width: 100%;
+
+    display: block;
+
+}

@@ -1,0 +1,40 @@
+.login 
+{
+    composes: container from '../App.css';
+    text-align: center;
+}
+
+.login * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+.title 
+{
+    composes: heading-2 from '../App.css';
+    width: fit-content;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input {
+    padding: 1em 2em;
+    width: 100%;
+}
+
+.btn {
+    composes: btn from '../App.css';
+    background-color: #FF8C38;
+    color: white;
+    width: 100%;
+}
+
+.error 
+{
+    color :red;
+}
