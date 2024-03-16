@@ -1,0 +1,14 @@
+.header {
+    composes: container from '../App.css';
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.56rem;
+    text-decoration: none;
+    color: black;
+}
