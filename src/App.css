@@ -11,3 +11,26 @@
   padding-left: 0;
   gap: 2em;
 }
+
+
+
+.btn {
+  padding: .75em 1.5em;
+  border:none;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 300ms, transform 300ms;
+}
+
+.btn:hover 
+{
+  transform:scale(1.1);
+  filter: brightness(120%);
+}
+
+.btn-orange {
+  color: #FFFFFF;
+  background-color: #FF8C38;
+}
+

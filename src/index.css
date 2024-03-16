@@ -4,7 +4,9 @@ body {
   background-color: #FFF7ED;
   color: #161616;
 }
-
+p {
+  line-height: 1.6;
+}
 * {
   box-sizing: border-box;
 }

@@ -7,9 +7,7 @@ export default function Layout(): JSX.Element {
   return (
     <div className={styles.layout}>
       <Header />
-      <main className={styles.main}>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </div>
   );

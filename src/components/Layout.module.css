@@ -4,6 +4,3 @@
     min-height: 100vh;
 }
 
-.main {
-    composes: container from '../App.css';
-}
