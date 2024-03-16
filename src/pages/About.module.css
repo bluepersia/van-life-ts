@@ -1,0 +1,29 @@
+
+.imgCover {
+    width: 100%;
+    display: block;
+}
+
+.imgCover, .inner > * {
+    max-width: 549px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner {
+    composes: container from '../App.css';
+}
+
+.cta {
+    composes: container from '../App.css';
+    background-color: #FFCC8D;
+}
+.cta_title {
+    font-size: 700;
+    font-size:1.5rem;
+}
+
+
+.cta_btn {
+    composes: btn from '../App.css';
+}

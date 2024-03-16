@@ -33,4 +33,14 @@
   color: #FFFFFF;
   background-color: #FF8C38;
 }
+.btn-black {
+  color: white;
+  background-color: #161616;
+}
 
+
+
+.heading-2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
