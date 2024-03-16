@@ -1,0 +1,24 @@
+.main {
+    composes: container from '../App.css';
+    background: url(../img/home.png);
+    background-size: cover;
+    color: white;
+}
+
+.main > * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+
+
+.btn {
+    composes: btn from '../App.css';
+    display: block;
+}
