@@ -13,7 +13,7 @@ const activeStyle = {
   color: '#161616',
 };
 
-const activeFontWeights = [600, 700];
+const activeFontWeights = [600, 700, 700];
 
 export default function Navlink({
   to,
