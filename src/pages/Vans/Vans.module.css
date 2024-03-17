@@ -1,5 +1,5 @@
 .main {
-    composes: container from '../App.css';
+    composes: container from '../../App.css';
 }
 
 .header {
@@ -12,7 +12,7 @@
 }
 
 .option {
-    composes: btn from '../App.css';
+    composes: btn from '../../App.css';
     background-color: #FFEAD0;
 }
 
@@ -79,6 +79,6 @@
 }   
 
 .vanType {
-    composes: vanType from '../App.css';
+    composes: vanType from '../../App.css';
     margin-top: 0;
 }

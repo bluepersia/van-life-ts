@@ -12,6 +12,11 @@ export default function Header(): JSX.Element {
       <nav>
         <ul className='navlist'>
           <li>
+            <Navlink to='host' styleIndex={0}>
+              Host
+            </Navlink>
+          </li>
+          <li>
             <Navlink to='about' styleIndex={0}>
               About
             </Navlink>

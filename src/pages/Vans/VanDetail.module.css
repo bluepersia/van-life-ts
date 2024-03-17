@@ -1,5 +1,5 @@
 .main {
-    composes: container from '../App.css';
+    composes: container from '../../App.css';
 }
 
 .main > * {
@@ -22,7 +22,7 @@
 }
 
 .btn {
-    composes: btn from '../App.css';
+    composes: btn from '../../App.css';
     display: block;
     width: 100%;
 }
