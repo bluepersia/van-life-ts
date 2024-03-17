@@ -1,0 +1,27 @@
+
+.vanHeader {
+    display: flex;
+    align-items: center;
+    
+    grid-column-gap: 1em;
+    
+}
+
+.vanImg {
+    width: 32%;
+}
+
+
+.vanType {
+    composes: vanType from '../../App.css';
+}
+
+.vanName {
+    font-weight: 700;
+    font-size: 1.625rem;
+}
+
+.vanPrice span {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
