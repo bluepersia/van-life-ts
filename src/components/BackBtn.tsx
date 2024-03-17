@@ -12,7 +12,7 @@ export default function BackBtn({
 }: PropsWithChildren<Props>): JSX.Element {
   return (
     <Link to={to} relative='path' className={styles.btn}>
-      <img src={imgArrow} /> <span> {children}</span>
+      <img src={imgArrow} /> <span>{children}</span>
     </Link>
   );
 }
