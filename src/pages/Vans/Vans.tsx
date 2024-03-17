@@ -1,5 +1,5 @@
 import { Link, useSearchParams } from 'react-router-dom';
-import { IVan } from '../models/van';
+import { IVan } from '../../models/van';
 import styles from './Vans.module.css';
 import { useQuery } from '@tanstack/react-query';
 

@@ -1,8 +1,8 @@
 import { useLocation, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import styles from './VanDetail.module.css';
-import { IVan } from '../models/van';
-import BackBtn from '../components/BackBtn';
+import { IVan } from '../../models/van';
+import BackBtn from '../../components/BackBtn';
 
 export default function VanDetail(): JSX.Element {
   const { id } = useParams();
