@@ -1,0 +1,11 @@
+.main {
+    composes: container from '../../App.css';
+}
+
+.main > * {
+    max-width: 500px;
+}
+
+.btn {
+    composes: btn from '../../App.css';  
+}
