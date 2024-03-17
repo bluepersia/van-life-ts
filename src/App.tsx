@@ -17,37 +17,55 @@ import HostVanDetails from './pages/Host/VanDetails.js';
 import HostVanPricing from './pages/Host/VanPricing.js';
 import HostVanPhotos from './pages/Host/VanPhotos.js';
 import NotFound from './pages/Host/NotFound.js';
+import { Dispatch, SetStateAction, createContext, useState } from 'react';
+import Login from './pages/Login.js';
+import Authlayout from './components/AuthLayout.js';
 
 const queryClient = new QueryClient();
 
+type AppContextType = {
+  loggedIn: boolean;
+  setLoggedIn: Dispatch<SetStateAction<boolean>>;
+};
+
+export const AppContext = createContext<AppContextType>({
+  loggedIn: false,
+  setLoggedIn: () => {},
+});
+
 function App() {
+  const [loggedIn, setLoggedIn] = useState<boolean>(false);
+
   return (
-    <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='about' element={<About />} />
-            <Route path='vans' element={<Vans />} />
-            <Route path='vans/:id' element={<VanDetail />} />
-
-            <Route path='host' element={<HostLayout />}>
-              <Route index element={<HostDashboard />} />
-              <Route path='income' element={<HostIncome />} />
-              <Route path='vans' element={<HostVans />} />
-              <Route path='vans/:id' element={<HostVanDetail />}>
-                <Route index element={<HostVanDetails />} />
-                <Route path='pricing' element={<HostVanPricing />} />
-                <Route path='photos' element={<HostVanPhotos />} />
+    <AppContext.Provider value={{ loggedIn, setLoggedIn }}>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path='about' element={<About />} />
+              <Route path='vans' element={<Vans />} />
+              <Route path='vans/:id' element={<VanDetail />} />
+              <Route element={<Authlayout />}>
+                <Route path='host' element={<HostLayout />}>
+                  <Route index element={<HostDashboard />} />
+                  <Route path='income' element={<HostIncome />} />
+                  <Route path='vans' element={<HostVans />} />
+                  <Route path='vans/:id' element={<HostVanDetail />}>
+                    <Route index element={<HostVanDetails />} />
+                    <Route path='pricing' element={<HostVanPricing />} />
+                    <Route path='photos' element={<HostVanPhotos />} />
+                  </Route>
+                  <Route path='reviews' element={<HostReviews />} />
+                </Route>
               </Route>
-              <Route path='reviews' element={<HostReviews />} />
+              <Route path='login' element={<Login />} />
+              <Route path='*' element={<NotFound />} />
             </Route>
-
-            <Route path='*' element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </QueryClientProvider>
+          </Routes>
+        </BrowserRouter>
+      </QueryClientProvider>
+    </AppContext.Provider>
   );
 }
 
