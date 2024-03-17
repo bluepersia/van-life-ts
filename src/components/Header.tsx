@@ -1,8 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 import Navlink from './Navlink';
+import imgAvatar from '../img/Avatar.png';
+import { useContext } from 'react';
+import { AppContext } from '../App';
 
 export default function Header(): JSX.Element {
+  const { loggedIn } = useContext(AppContext);
+  const location = useLocation();
+
   return (
     <header className={styles.header}>
       <Link to='.' className={styles.logo}>
@@ -26,6 +32,17 @@ export default function Header(): JSX.Element {
               Vans
             </Navlink>
           </li>
+          {!loggedIn && (
+            <li>
+              <Link
+                to='login'
+                state={{ from: location.pathname }}
+                replace={true}
+              >
+                <img src={imgAvatar} />
+              </Link>
+            </li>
+          )}
         </ul>
       </nav>
     </header>
