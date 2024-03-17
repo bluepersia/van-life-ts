@@ -1,0 +1,28 @@
+.main {
+    composes: container from '../App.css';
+}
+
+.main > * {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    width: 100%;
+}
+
+.price {
+    font-size: 1.25rem;
+}
+
+.price span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    composes: btn from '../App.css';
+    display: block;
+    width: 100%;
+}
