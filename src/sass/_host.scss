@@ -72,3 +72,88 @@
 
 
 
+
+
+.host-van 
+{
+    &__inner
+    {
+        margin-top: 2.31em;
+    }
+
+    &__header 
+    {
+        display: flex;
+        align-items: center;
+        gap: 1.25em;
+    }
+
+    &__img 
+    {
+        display: block;
+        width: 32%;
+    }
+
+    &__type 
+    {
+        @extend .van-type;
+    }
+
+    &__name 
+    {
+        font-size: 1.625rem;
+    }
+
+    &__price 
+    {
+        & .strong 
+        {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+    }
+
+    &__nav
+    {
+        &-list 
+        {
+            padding: 1.625em 0;
+            gap:1.31em;
+        }
+    }
+}
+
+
+
+.host-van-details 
+{
+    &__text 
+    {
+        font-size: .875rem;
+    }
+}
+
+
+.host-van-pricing 
+{
+    &__price 
+    {
+        color: $color-Grey;
+
+        & .strong 
+        {
+            font-size: 1.5rem;
+            color: $color-Black;
+        }
+    }
+}
+
+
+.host-van-photos
+{
+    &__photo
+    {
+        display: block;
+        width: 20%;
+    }
+}

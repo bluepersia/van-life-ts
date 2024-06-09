@@ -12,6 +12,10 @@ import HostDashboard from './pages/Host/Dashboard.js';
 import HostIncome from './pages/Host/Income.js';
 import HostVans from './pages/Host/Vans.js';
 import HostReviews from './pages/Host/Reviews.js';
+import HostVanDetail from './pages/Host/VanDetail.js';
+import HostVanDetails from './pages/Host/VanDetails.js';
+import HostVanPricing from './pages/Host/VanPricing.js';
+import HostVanPhotos from './pages/Host/VanPhotos.js';
 
 const queryClient = new QueryClient();
 
@@ -30,6 +34,11 @@ function App() {
               <Route index element={<HostDashboard />} />
               <Route path='income' element={<HostIncome />} />
               <Route path='vans' element={<HostVans />} />
+              <Route path='vans/:id' element={<HostVanDetail />}>
+                <Route index element={<HostVanDetails />} />
+                <Route path='pricing' element={<HostVanPricing />} />
+                <Route path='photos' element={<HostVanPhotos />} />
+              </Route>
               <Route path='reviews' element={<HostReviews />} />
             </Route>
           </Route>
