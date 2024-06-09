@@ -1,0 +1,22 @@
+
+
+.host 
+{
+    @extend .container;
+    &__nav 
+    {
+        margin-bottom: 3.43em;
+
+        &-list 
+        {
+            gap: 1.75em;
+        }
+        
+        &-item
+    {
+        font-size: 1.125rem;
+    }
+    }
+
+    
+}

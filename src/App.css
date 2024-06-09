@@ -21,7 +21,7 @@ p {
   margin-bottom: 0;
 }
 
-.container, .van-detail, .vans, .about__inner, .home, .footer, .header {
+.container, .host, .van-detail, .vans, .about__inner, .home, .footer, .header {
   padding: 2.25em 5%;
 }
 
@@ -281,6 +281,16 @@ p {
 .van-detail__btn {
   display: block;
   width: 100%;
+}
+
+.host__nav {
+  margin-bottom: 3.43em;
+}
+.host__nav-list {
+  gap: 1.75em;
+}
+.host__nav-item {
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=App.css.map */

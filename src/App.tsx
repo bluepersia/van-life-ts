@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Vans from './pages/Vans/Vans.js';
 import VanDetail from './pages/Vans/VanDetail.js';
+import HostLayout from './pages/Host/Layout.js';
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,8 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='vans' element={<Vans />} />
             <Route path='vans/:id' element={<VanDetail />} />
+
+            <Route path='host' element={<HostLayout />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
