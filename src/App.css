@@ -21,7 +21,7 @@ p {
   margin-bottom: 0;
 }
 
-.container, .home, .footer, .header {
+.container, .about__inner, .home, .footer, .header {
   padding: 2.25em 5%;
 }
 
@@ -53,7 +53,7 @@ p {
   width: 100%;
 }
 
-.btn, .home__btn {
+.btn, .about__btn, .home__btn {
   border: none;
   font-family: inherit;
   color: white;
@@ -63,13 +63,22 @@ p {
   transition: filter 300ms, transform 300ms;
   cursor: pointer;
 }
-.btn:hover, .home__btn:hover {
+.btn:hover, .about__btn:hover, .home__btn:hover {
   filter: brightness(120%);
   transform: scale(1.1);
 }
 
 .btn--orange, .home__btn {
   background-color: hsl(25, 100%, 61%);
+}
+
+.btn--black, .about__btn {
+  background-color: hsl(0, 0%, 9%);
+}
+
+.heading-l, .about__title {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .header {
@@ -118,6 +127,28 @@ p {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about__img {
+  display: block;
+  width: 100%;
+}
+.about__img, .about__inner > * {
+  max-width: 549px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__inner {
+  padding-top: 3em;
+  padding-bottom: 3.31em;
+}
+.about__cta {
+  margin-top: 3.43em;
+  background-color: hsl(33, 100%, 78%);
+  padding: 2em 2.3em;
+}
+.about__cta-title {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=App.css.map */
