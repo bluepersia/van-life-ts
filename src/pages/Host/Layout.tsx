@@ -6,7 +6,7 @@ export default function HostLayout(): JSX.Element {
     <main className='host'>
       <nav className='nav host__nav'>
         <ul className='nav__list host__nav-list'>
-          <li className='nav__link'>
+          <li className='nav__item host__nav-item'>
             <NavLink to='.' end={true}>
               Dashboard
             </NavLink>
