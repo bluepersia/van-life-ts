@@ -69,4 +69,10 @@ body {
   font-size: 0.875rem;
 }
 
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=App.css.map */
