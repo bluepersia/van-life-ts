@@ -116,3 +116,50 @@
         }
     }
 }
+
+
+
+.van-detail
+ {
+    @extend .container;
+
+    > * {
+        max-width: 500px;
+
+    }
+    &__img 
+    {
+        margin-top: 2.5em;
+        display: block;
+        width: 100%;
+    }
+
+    &__type
+     {
+        @extend .van-type;
+     }
+
+
+     &__name {
+        @extend .heading-l;
+     }
+
+     &__price
+     {
+        font-size: 1.25rem;
+
+        & .strong 
+        {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+     }
+
+     &__btn 
+     {
+        @extend .btn;
+        @extend .btn--orange;
+        display: block;
+        width: 100%;
+     }
+ }
