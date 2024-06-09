@@ -93,7 +93,7 @@ p {
   background-color: hsl(0, 0%, 9%);
 }
 
-.heading-l, .van-detail__name, .vans__title, .about__title {
+.heading-l, .host-vans__title, .van-detail__name, .vans__title, .about__title {
   font-size: 2rem;
   font-weight: 700;
 }
@@ -197,7 +197,7 @@ p {
 }
 .vans__opt {
   background-color: hsl(33, 100%, 91%);
-  color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 30%);
 }
 .vans__opt:hover {
   color: hsl(33, 100%, 91%);
@@ -291,6 +291,40 @@ p {
 }
 .host__nav-item {
   font-size: 1.125rem;
+}
+
+.host-vans__title {
+  margin-bottom: 1em;
+}
+.host-vans__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.host-vans__van {
+  background-color: white;
+  padding: 1.125em 1.5em;
+}
+.host-vans__van-link {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+.host-vans__van-img {
+  display: block;
+  width: 13%;
+}
+.host-vans__van-name {
+  margin-bottom: 0;
+}
+.host-vans__van-price {
+  margin-top: 0;
+  color: hsl(0, 0%, 30%);
 }
 
 /*# sourceMappingURL=App.css.map */
