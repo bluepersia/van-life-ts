@@ -1,0 +1,33 @@
+$color-Black: hsl(0, 0%, 9%);
+$color-White: white;
+$color-Cream: hsl(33, 100%, 96%);
+$color-Beige: hsl(33, 100%, 78%);
+$color-Vanilla: hsl(33, 100%, 91%);
+$color-Orange: hsl(25, 100%, 61%);
+$color-Simple: hsl(14, 70%, 61%);
+$color-Rugged: hsl(176, 69%, 22%);
+$color-Luxury: $color-Black;
+$color-DarkGrey: hsl(0,0%, 15%);
+$color-LightGrey: hsl(0, 0%, 67%);
+
+$font-Main: "Inter", sans-serif;
+
+
+body {
+    margin: 0;
+    background-color: $color-Cream;
+    color: $color-Black;
+    font-family: $font-Main;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* :first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
