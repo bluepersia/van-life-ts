@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import img from '../assets/img/about.png';
 
 export default function About(): JSX.Element {
@@ -25,7 +26,9 @@ export default function About(): JSX.Element {
             <br />
             Your van is ready
           </h3>
-          <button className='about__btn'>Explore our vans</button>
+          <Link to='/vans' className='about__btn'>
+            Explore our vans
+          </Link>
         </div>
       </div>
     </main>

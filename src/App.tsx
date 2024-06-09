@@ -16,6 +16,7 @@ import HostVanDetail from './pages/Host/VanDetail.js';
 import HostVanDetails from './pages/Host/VanDetails.js';
 import HostVanPricing from './pages/Host/VanPricing.js';
 import HostVanPhotos from './pages/Host/VanPhotos.js';
+import NotFound from './pages/NotFound.js';
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,8 @@ function App() {
               </Route>
               <Route path='reviews' element={<HostReviews />} />
             </Route>
+
+            <Route path='*' element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>

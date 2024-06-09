@@ -1,0 +1,28 @@
+
+
+
+.not-found 
+{
+    @extend .container;
+
+    padding-top: 6.5em;
+    padding-bottom: 6.5em;
+
+    &__title 
+    {
+        @extend .heading-l;
+    }
+
+    &__btn
+    {
+        @extend .btn;
+        @extend .btn--black;
+        display: block;
+        width: 100%;
+    }
+
+    > *
+    {
+        max-width: 500px;
+    }
+}
