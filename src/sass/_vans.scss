@@ -1,0 +1,118 @@
+
+
+.vans 
+{
+    @extend .container;
+    padding-top: 3.375em;
+    padding-bottom: 5.18em;
+
+    &__top
+    {
+        margin-bottom: 3.4em
+    }
+
+    &__title 
+    {
+        @extend .heading-l;
+    }
+
+    &__opts
+    {
+        display: flex;
+        align-items: center;
+        gap: 1.25em;
+    }
+
+    &__opt
+    {
+        @extend .btn;
+        background-color: $color-Vanilla;
+        color: $color-Grey;
+
+        &:hover
+        {
+            color: $color-Vanilla;
+        }
+
+        &--simple:hover
+        {
+            background-color: $color-Simple;
+        }
+
+        &--rugged:hover
+        {
+            background-color: $color-Rugged;
+        }
+        &--luxury:hover
+        {
+            background-color: $color-Luxury;
+        }
+    }
+
+    &__clear
+    {
+        border:none;
+        background: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2em;
+        row-gap: 1.625em;
+    }
+
+    &__van
+    {
+        flex-basis: 230px;
+        flex-grow: 1;
+        &-img 
+        {
+            display: block;
+            width: 100%;
+            grid-column: 1 / -1;
+            grid-row:  1 / 2;
+        }
+
+        &-link {
+            color:inherit;
+            text-decoration: none;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+        }
+
+        &-name 
+        {
+            grid-column: 1 / 2;
+            grid-row:  2 / 3;
+            margin-bottom: 0;
+        }
+
+        &-price 
+        {
+            text-align: right;
+            grid-column: 2 / -1;
+            grid-row: 2 / -1;
+            font-size: .875rem;
+            & .strong 
+            {
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+        }
+
+        &-type 
+        {
+            @extend .van-type;
+            margin-top: 0s;
+            grid-column: 1 / 2;
+            grid-row: 3 / -1;
+        }
+    }
+}
