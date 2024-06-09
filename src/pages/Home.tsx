@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Home(): JSX.Element {
   return (
     <main className='home'>
@@ -8,7 +10,9 @@ export default function Home(): JSX.Element {
         Add adventure to your life by joining the #vanlife movement. Rent the
         perfect van to make your perfect road trip.
       </p>
-      <button className='home__btn'>Find your van</button>
+      <Link to='vans' className='home__btn'>
+        Find your van
+      </Link>
     </main>
   );
 }
