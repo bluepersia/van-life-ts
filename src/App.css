@@ -5,6 +5,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+p {
+  line-height: 1.6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,8 +21,8 @@ body {
   margin-bottom: 0;
 }
 
-.container, .footer, .header {
-  padding: 2em 5%;
+.container, .home, .footer, .header {
+  padding: 2.25em 5%;
 }
 
 .nav__list {
@@ -49,6 +53,25 @@ body {
   width: 100%;
 }
 
+.btn, .home__btn {
+  border: none;
+  font-family: inherit;
+  color: white;
+  padding: 0.75em 1.5em;
+  display: inline-block;
+  border-radius: 5px;
+  transition: filter 300ms, transform 300ms;
+  cursor: pointer;
+}
+.btn:hover, .home__btn:hover {
+  filter: brightness(120%);
+  transform: scale(1.1);
+}
+
+.btn--orange, .home__btn {
+  background-color: hsl(25, 100%, 61%);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -73,6 +96,28 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.home {
+  background-image: url(./assets/img/home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.home__title {
+  font-size: 2.25rem;
+}
+.home__btn {
+  display: block;
+  width: 100%;
+  margin-top: 3em;
+}
+.home > * {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=App.css.map */
