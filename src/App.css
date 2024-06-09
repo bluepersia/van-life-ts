@@ -21,7 +21,7 @@ p {
   margin-bottom: 0;
 }
 
-.container, .about__inner, .home, .footer, .header {
+.container, .vans, .about__inner, .home, .footer, .header {
   padding: 2.25em 5%;
 }
 
@@ -53,17 +53,17 @@ p {
   width: 100%;
 }
 
-.btn, .about__btn, .home__btn {
+.btn, .vans__opt, .about__btn, .home__btn, .van-type, .vans__van-type {
   border: none;
   font-family: inherit;
   color: white;
   padding: 0.75em 1.5em;
   display: inline-block;
   border-radius: 5px;
-  transition: filter 300ms, transform 300ms;
+  transition: all 300ms;
   cursor: pointer;
 }
-.btn:hover, .about__btn:hover, .home__btn:hover {
+.btn:hover, .vans__opt:hover, .about__btn:hover, .home__btn:hover, .van-type:hover, .vans__van-type:hover {
   filter: brightness(120%);
   transform: scale(1.1);
 }
@@ -76,9 +76,29 @@ p {
   background-color: hsl(0, 0%, 9%);
 }
 
-.heading-l, .about__title {
+.van-type, .vans__van-type {
+  width: fit-content;
+}
+
+.van-type--simple {
+  background-color: hsl(14, 70%, 61%);
+}
+
+.van-type--rugged {
+  background-color: hsl(176, 69%, 22%);
+}
+
+.van-type--luxury {
+  background-color: hsl(0, 0%, 9%);
+}
+
+.heading-l, .vans__title, .about__title {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.error {
+  color: red;
 }
 
 .header {
@@ -149,6 +169,85 @@ p {
 }
 .about__cta-title {
   font-size: 1.5rem;
+}
+.vans {
+  padding-top: 3.375em;
+  padding-bottom: 5.18em;
+}
+.vans__top {
+  margin-bottom: 3.4em;
+}
+.vans__opts {
+  display: flex;
+  align-items: center;
+  gap: 1.25em;
+}
+.vans__opt {
+  background-color: hsl(33, 100%, 91%);
+  color: hsl(0, 0%, 15%);
+}
+.vans__opt:hover {
+  color: hsl(33, 100%, 91%);
+}
+.vans__opt--simple:hover {
+  background-color: hsl(14, 70%, 61%);
+}
+.vans__opt--rugged:hover {
+  background-color: hsl(176, 69%, 22%);
+}
+.vans__opt--luxury:hover {
+  background-color: hsl(0, 0%, 9%);
+}
+.vans__clear {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.vans__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2em;
+  row-gap: 1.625em;
+}
+.vans__van {
+  flex-basis: 230px;
+  flex-grow: 1;
+}
+.vans__van-img {
+  display: block;
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.vans__van-link {
+  color: inherit;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+.vans__van-name {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-bottom: 0;
+}
+.vans__van-price {
+  text-align: right;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  font-size: 0.875rem;
+}
+.vans__van-price .strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.vans__van-type {
+  margin-top: 0s;
+  grid-column: 1/2;
+  grid-row: 3/-1;
 }
 
 /*# sourceMappingURL=App.css.map */
