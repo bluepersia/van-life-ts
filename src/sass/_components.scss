@@ -82,6 +82,7 @@
 .van-type 
 {
     @extend .btn;
+    text-transform: capitalize;
     width: fit-content;
 }
 
