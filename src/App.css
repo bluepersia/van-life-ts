@@ -21,7 +21,7 @@ p {
   margin-bottom: 0;
 }
 
-.container, .not-found, .host, .van-detail, .vans, .about__inner, .home, .footer, .header {
+.container, .not-found, .login, .host, .van-detail, .vans, .about__inner, .home, .footer, .header {
   padding: 2.25em 5%;
 }
 
@@ -53,7 +53,7 @@ p {
   width: 100%;
 }
 
-.btn, .not-found__btn, .van-detail__btn, .vans__opt, .about__btn, .home__btn, .van-type, .host-van__type, .van-detail__type, .vans__van-type {
+.btn, .not-found__btn, .login__btn, .van-detail__btn, .vans__opt, .about__btn, .home__btn, .van-type, .host-van__type, .van-detail__type, .vans__van-type {
   border: none;
   font-family: inherit;
   color: white;
@@ -65,13 +65,14 @@ p {
   font-size: inherit;
   text-decoration: none;
   text-align: center;
+  font-weight: 700;
 }
-.btn:hover, .not-found__btn:hover, .van-detail__btn:hover, .vans__opt:hover, .about__btn:hover, .home__btn:hover, .van-type:hover, .host-van__type:hover, .van-detail__type:hover, .vans__van-type:hover {
+.btn:hover, .not-found__btn:hover, .login__btn:hover, .van-detail__btn:hover, .vans__opt:hover, .about__btn:hover, .home__btn:hover, .van-type:hover, .host-van__type:hover, .van-detail__type:hover, .vans__van-type:hover {
   filter: brightness(120%);
   transform: scale(1.1);
 }
 
-.btn--orange, .van-detail__btn, .home__btn {
+.btn--orange, .login__btn, .van-detail__btn, .home__btn {
   background-color: hsl(25, 100%, 61%);
 }
 
@@ -80,6 +81,7 @@ p {
 }
 
 .van-type, .host-van__type, .van-detail__type, .vans__van-type {
+  font-weight: 600;
   text-transform: capitalize;
   width: fit-content;
 }
@@ -199,6 +201,7 @@ p {
   gap: 1.25em;
 }
 .vans__opt {
+  font-weight: 500;
   background-color: hsl(33, 100%, 91%);
   color: hsl(0, 0%, 30%);
 }
@@ -369,6 +372,27 @@ p {
 .host-van-photos__photo {
   display: block;
   width: 20%;
+}
+
+.login {
+  text-align: center;
+}
+.login > * {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+.login__input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.56em 0.81em;
+}
+.login__btn {
+  margin-top: 1.375em;
 }
 
 .not-found {

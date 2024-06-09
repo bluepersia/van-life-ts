@@ -1,0 +1,34 @@
+
+
+.login
+{
+    @extend .container;
+    text-align: center;
+
+    & > * 
+    {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+   &__input 
+   {
+        font-size: inherit;
+        font-family: inherit;
+        padding: .56em .81em;
+   }
+
+    &__btn 
+    {
+        @extend .btn;
+        @extend .btn--orange;
+        margin-top: 1.375em;
+    }
+}
