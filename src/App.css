@@ -17,4 +17,48 @@ body {
   margin-bottom: 0;
 }
 
+.container, .header {
+  padding: 2em 5%;
+}
+
+.nav__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 0.81em;
+}
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+}
+.nav__link--active {
+  font-weight: bold;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(0, 0%, 9%);
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 1px;
+  transition: width 300ms;
+}
+.nav__link:hover::after, .nav__link--active::after {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 1.56rem;
+  font-weight: 900;
+  color: hsl(0, 0%, 9%);
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=App.css.map */
