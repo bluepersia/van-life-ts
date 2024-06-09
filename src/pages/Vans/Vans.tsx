@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { IVan } from '../models/van';
+import { IVan } from '../../models/van';
 import { Link, useSearchParams } from 'react-router-dom';
 
 export default function Vans(): JSX.Element {
