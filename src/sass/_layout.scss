@@ -16,3 +16,15 @@
         text-decoration: none;
     }
 }
+
+
+
+.footer 
+{
+    @extend .container;
+    color: $color-LightGrey;
+    background-color: $color-DarkGrey;
+    text-align: center;
+    margin-top: auto;
+    font-size: .875rem;
+}

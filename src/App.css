@@ -17,7 +17,7 @@ body {
   margin-bottom: 0;
 }
 
-.container, .header {
+.container, .footer, .header {
   padding: 2em 5%;
 }
 
@@ -59,6 +59,14 @@ body {
   font-weight: 900;
   color: hsl(0, 0%, 9%);
   text-decoration: none;
+}
+
+.footer {
+  color: hsl(0, 0%, 67%);
+  background-color: hsl(0, 0%, 15%);
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=App.css.map */
